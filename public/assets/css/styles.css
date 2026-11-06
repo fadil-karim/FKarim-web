@@ -8,12 +8,12 @@
 /* BasilicaLabs.AI sets its wordmark and caps in "Flux" (© MonibDesign, a
    commercial face) with Afacad Flux as the open-licence fallback; this site
    uses the fallback. If your Flux licence covers this site too, copy
-   Flux-Regular.woff2 into assets/fonts/, uncomment the block below and put
-   'Flux' first in --font-brand.
+   Flux-Regular.woff2 into public/assets/fonts/, uncomment the block below and
+   put 'Flux' first in --font-brand.
 
 @font-face{
   font-family:'Flux';
-  src:url('fonts/Flux-Regular.woff2') format('woff2');
+  src:url('../fonts/Flux-Regular.woff2') format('woff2');
   font-weight:400 700; font-display:swap;
 }
 */
@@ -328,6 +328,14 @@ a.box:hover{ text-decoration:none; box-shadow:0 0 0 1px var(--ink) inset; }
   border-top:1px solid var(--hair); padding-top:1rem; padding-bottom:1.6rem;
   font-family:var(--font-brand); font-size:.64rem; letter-spacing:.14em;
   text-transform:uppercase; color:var(--ink-60); }
+
+/* ── 404 ── */
+.lost{ min-height:52vh; margin-top:var(--gap); padding:3rem clamp(20px,4vw,48px); gap:.75rem; }
+.lost::before{ content:""; position:absolute; inset:7px; border:1px dashed var(--ink); pointer-events:none; }
+.lost .display{ font-size:clamp(2rem,5vw,3.4rem); }
+.lost-note{ max-width:30rem; color:var(--ink-60); text-wrap:pretty; }
+.lost .btn{ margin-top:.6rem; }
+.site-footer .foot-legal:only-child{ border-top:0; padding-top:1.2rem; }
 
 /* ── responsive ── */
 @media (max-width:900px){

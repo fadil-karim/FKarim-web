@@ -1,0 +1,14 @@
+{
+  "name": "fkarim-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fadil Karim's personal homepage: apps, writing and a reading list, in the BasilicaLabs.AI style",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
