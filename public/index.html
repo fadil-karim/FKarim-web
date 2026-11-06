@@ -36,7 +36,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Prata&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css?v=1">
+<link rel="stylesheet" href="assets/css/styles.css?v=2">
 <script>(function(){var d=document.documentElement;d.classList.add('js');try{if(localStorage.getItem('fk-theme')==='dark')d.setAttribute('data-theme','dark');}catch(e){}})();</script>
 <script src="assets/js/site.js?v=1" defer></script>
 </head>
@@ -48,6 +48,7 @@
   <a class="brand" href="./" aria-label="Fadil Karim — home">Fadil Karim<svg class="sparks" viewBox="0 0 100 100" aria-hidden="true" fill="currentColor"><path transform="translate(52 0) scale(0.30)" d="M50 0C54 32 68 46 100 50 68 54 54 68 50 100 46 68 32 54 0 50 32 46 46 32 50 0Z"/><path transform="translate(0 22) scale(0.60)" d="M50 0C54 32 68 46 100 50 68 54 54 68 50 100 46 68 32 54 0 50 32 46 46 32 50 0Z"/><path transform="translate(60 56) scale(0.40)" d="M50 0C54 32 68 46 100 50 68 54 54 68 50 100 46 68 32 54 0 50 32 46 46 32 50 0Z"/></svg></a>
   <nav class="nav-row" aria-label="Sections">
     <a href="#apps">Apps</a>
+    <a href="#websites">Websites</a>
     <a href="#writing">Writing</a>
     <a href="#reading">Reading list</a>
     <a class="ig-link" href="https://instagram.com/fid_900" target="_blank" rel="noopener" aria-label="Instagram — fid_900"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none"/></svg>fid_900</a>
@@ -65,159 +66,101 @@
 
   <!-- ════════ APPS ════════
        One <article class="rcard"> per app: a line drawing on the plate, the
-       name on the black banner, one line of description, then the buttons.
-       A button that isn't ready yet: <span class="ropt off">Coming soon</span> -->
+       name on the black banner, one line of description, then a button per
+       platform. A platform that isn't live yet: <span class="ropt off">iOS &middot; soon</span> -->
   <section class="sect" id="apps" aria-labelledby="appsHead">
-    <h2 class="section-head" id="appsHead">Apps<span class="sh-sub">things I&rsquo;ve built &middot; browser dashboards &amp; pyRevit <span class="nw">add-ins</span></span></h2>
-    <div class="rail-wrap">
-      <button class="rarrow prev" type="button" aria-label="Scroll apps left">&#8249;</button>
-      <div class="rail" role="region" aria-label="Apps" tabindex="0">
+    <h2 class="section-head" id="appsHead">Apps<span class="sh-sub">things I&rsquo;ve built &middot; on the web &amp; iOS</span></h2>
+    <div class="apps-grid">
 
-        <!-- AI PLAYGROUND -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M24 82L62 26L118 108L176 40" stroke-width="1.1" stroke-dasharray="3 5"/>
-            <path d="M24 82C62 26 118 108 176 40" stroke-width="2.4"/>
-            <rect class="pt" x="20.5" y="78.5" width="7" height="7" stroke-width="1.6"/>
-            <rect class="pt" x="58.5" y="22.5" width="7" height="7" stroke-width="1.6"/>
-            <rect class="pt" x="114.5" y="104.5" width="7" height="7" stroke-width="1.6"/>
-            <rect class="pt" x="172.5" y="36.5" width="7" height="7" stroke-width="1.6"/>
-            <path d="M32 146A26 26 0 0 1 84 146Z"/>
-            <path d="M58 146L45 129M58 146L58 124M58 146L71 129" stroke-width="1.4"/>
-            <rect x="100" y="132" width="56" height="14" stroke-width="1.6"/>
-            <path d="M106 132v5M112 132v8M118 132v5M124 132v8M130 132v5M136 132v8M142 132v5M148 132v8" stroke-width="1.1"/>
-            <circle cx="176" cy="139" r="7" stroke-width="1.6"/>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">AI PLAYGROUND</h3></div>
-          <p class="rdesc">every line type from Grasshopper, Revit &amp; Rhino &mdash; then extrude, revolve, sweep &amp; blend, live</p>
-          <div class="ropts"><a class="ropt" href="https://basilicalabs.ai/playground.html" target="_blank" rel="noopener">Open the playground</a></div>
-        </article>
+      <!-- VISUAL NEUROSCIENCE ANATOMY -->
+      <article class="rcard">
+        <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M124 108C126 122 140 130 154 126C166 122 168 108 158 100" />
+          <path d="M132 116C142 120 152 118 160 110M136 123C146 125 155 122 162 117" stroke-width="1.1"/>
+          <path d="M110 110C112 124 112 136 110 150M122 110C122 124 124 136 124 150" />
+          <path class="pt" d="M46 92C40 72 48 46 72 36C92 26 122 24 144 34C162 42 172 60 170 78C168 92 158 100 146 100C138 102 132 108 124 110C110 116 92 118 80 112C70 108 66 100 72 94C64 96 52 98 46 92Z" stroke-width="2.2"/>
+          <path d="M72 94C88 86 104 84 126 80" stroke-width="1.6"/>
+          <path d="M108 27C104 40 112 50 104 62C100 70 104 76 100 82" stroke-width="1.6"/>
+          <path d="M60 52C70 56 66 66 76 70M82 37C88 47 82 55 90 62M124 30C120 42 130 50 124 62M146 43C138 53 148 61 140 72M160 62C152 70 160 80 152 88M88 104C100 100 112 102 124 98M56 72C64 76 60 84 68 87" stroke-width="1.2"/>
+          <path d="M16 70H184" stroke-width="1" stroke-dasharray="3 5"/>
+          <rect class="pt" x="12.5" y="66.5" width="7" height="7" stroke-width="1.6"/>
+          <rect class="pt" x="180.5" y="66.5" width="7" height="7" stroke-width="1.6"/>
+        </svg></div>
+        <div class="sel-banner"><h3 class="sel-name">VISUAL NEUROSCIENCE ANATOMY</h3></div>
+        <p class="rdesc">an interactive 3D atlas of the human brain &mdash; regions, Brodmann areas, white-matter tracts &amp; receptors, free</p>
+        <div class="ropts"><a class="ropt" href="https://visualneuroscience.ai/" target="_blank" rel="noopener">Web</a><a class="ropt" href="https://apps.apple.com/app/id6805618686" target="_blank" rel="noopener">iOS</a><span class="ropt off">Vision Pro &middot; soon</span></div>
+      </article>
 
-        <!-- THE GHERKIN -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <defs><clipPath id="clipGherkin"><path d="M86 146C74 124 70 104 72 86C75 58 87 34 100 14C113 34 125 58 128 86C130 104 126 124 114 146Z"/></clipPath></defs>
-            <path class="pt" d="M38 146V114H60V146M150 146V106H168V146M164 146V124H182V146M22 146V126H40V146" stroke-width="1.4"/>
-            <path clip-path="url(#clipGherkin)" stroke-width="1" d="M-10 150L77.5 10M2 150L89.5 10M14 150L101.5 10M26 150L113.5 10M38 150L125.5 10M50 150L137.5 10M62 150L149.5 10M74 150L161.5 10M86 150L173.5 10M98 150L185.5 10M110 150L197.5 10M122 150L209.5 10M82 150L-5.5 10M94 150L6.5 10M106 150L18.5 10M118 150L30.5 10M130 150L42.5 10M142 150L54.5 10M154 150L66.5 10M166 150L78.5 10M178 150L90.5 10M190 150L102.5 10M202 150L114.5 10M214 150L126.5 10"/>
-            <path d="M86 146C74 124 70 104 72 86C75 58 87 34 100 14C113 34 125 58 128 86C130 104 126 124 114 146Z" stroke-width="2.2"/>
-            <path d="M100 14V6" stroke-width="1.6"/>
-            <path d="M14 146H186" stroke-width="1.8"/>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">THE GHERKIN</h3></div>
-          <p class="rdesc">a parametric tower &mdash; spline profile, stacked levels, diagrid exoskeleton, Revit-ready CSV</p>
-          <div class="ropts"><a class="ropt" href="https://basilicalabs.ai/gherkin.html" target="_blank" rel="noopener">Concept design</a><a class="ropt" href="https://basilicalabs.ai/gherkin-studio.html" target="_blank" rel="noopener">Studio</a></div>
-        </article>
+      <!-- VOCAB CARDS -->
+      <article class="rcard">
+        <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <g transform="rotate(-9 98 70)">
+            <rect class="pt" x="46" y="34" width="104" height="70" rx="5"/>
+            <path d="M60 48H94M60 56H82" stroke-width="1.2"/>
+          </g>
+          <g transform="rotate(5 104 92)">
+            <rect class="pt" x="50" y="56" width="108" height="72" rx="5"/>
+            <text x="104" y="100" text-anchor="middle" font-family="Prata, Georgia, serif" font-size="30" fill="currentColor" stroke="none">Aa</text>
+            <path d="M86 112H122" stroke-width="1.2"/>
+          </g>
+          <path d="M170 56C182 68 182 88 170 100" stroke-width="1.6"/>
+          <path d="M170 100L171.5 91.5M170 100L178 97" stroke-width="1.6"/>
+        </svg></div>
+        <div class="sel-banner"><h3 class="sel-name">VOCAB CARDS</h3></div>
+        <p class="rdesc">vocabulary cards for language learners</p>
+        <div class="ropts"><span class="ropt off">Web &middot; soon</span><span class="ropt off">iOS &middot; soon</span></div>
+      </article>
 
-        <!-- DYMAK HQ -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <g transform="translate(0 -7)">
-              <ellipse cx="100" cy="112" rx="72" ry="22" stroke-width="1.1" stroke-dasharray="3 5"/>
-              <path d="M166.5 70.4V120.4M150.9 77.6V127.6M127.6 82.3V132.3M100 84V134M72.4 82.3V132.3M49.1 77.6V127.6M33.5 70.4V120.4" stroke-width="1.6"/>
-              <ellipse class="pt" cx="100" cy="62" rx="72" ry="22" stroke-width="2.2"/>
-              <path d="M136 60L172 62M129 65.7L150.9 77.6M112 68L100 84M95 65.7L49.1 77.6M88 60L28 62M95 54.3L49.1 46.4M112 52L100 40M129 54.3L150.9 46.4" stroke-width="1"/>
-              <ellipse cx="112" cy="60" rx="24" ry="8" stroke-width="1.8"/>
-            </g>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">DYMAK HQ</h3></div>
-          <p class="rdesc">a parametric roof &mdash; circular plan, offset hole, opposed rim slopes, the frame out to Revit</p>
-          <div class="ropts"><a class="ropt" href="https://basilicalabs.ai/dymak.html" target="_blank" rel="noopener">Concept design</a><a class="ropt" href="https://basilicalabs.ai/dymak-tutorial.html" target="_blank" rel="noopener">Tutorial</a></div>
-        </article>
+      <!-- BUSINESS NUMBERS -->
+      <article class="rcard">
+        <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect class="pt" x="26" y="26" width="78" height="108"/>
+          <path d="M36 40H76" stroke-width="1.8"/>
+          <path d="M36 56H62M78 56H94M36 68H58M78 68H94M36 80H66M78 80H94M36 92H56M78 92H94" stroke-width="1.1"/>
+          <path d="M76 103H94M76 107H94" stroke-width="1.2"/>
+          <path d="M36 120H54M78 120H94" stroke-width="1.8"/>
+          <path d="M116 128H184" stroke-width="1.4"/>
+          <rect x="120" y="106" width="10" height="22" stroke-width="1.6"/>
+          <rect x="136" y="94" width="10" height="34" stroke-width="1.6"/>
+          <rect x="152" y="82" width="10" height="46" stroke-width="1.6"/>
+          <rect x="168" y="66" width="10" height="62" stroke-width="1.6"/>
+          <path d="M120 96L141 82L157 70L176 50"/>
+          <circle cx="176" cy="50" r="2.8" fill="currentColor" stroke="none"/>
+        </svg></div>
+        <div class="sel-banner"><h3 class="sel-name">BUSINESS NUMBERS</h3></div>
+        <p class="rdesc">the numbers behind a business: revenue, margins &amp; cash, made easy to read</p>
+        <div class="ropts"><span class="ropt off">Web &middot; soon</span><span class="ropt off">iOS &middot; soon</span></div>
+      </article>
 
-        <!-- TOPOFORGE -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M18 100C14 50 70 18 116 22C170 26 194 64 184 100C176 136 120 148 74 142C36 137 20 124 18 100Z" stroke-width="1.1" stroke-dasharray="3 5"/>
-            <path d="M30 96C28 60 70 30 112 32C156 34 178 60 172 92C166 124 120 136 82 130C50 125 31 116 30 96Z" stroke-width="1.6"/>
-            <path d="M52 94C50 66 80 46 112 48C144 50 158 70 154 92C150 114 118 122 92 118C68 114 53 108 52 94Z" stroke-width="1.6"/>
-            <path d="M74 90C73 72 92 62 112 63C132 64 140 76 137 90C134 104 116 108 100 106C84 104 75 100 74 90Z" stroke-width="1.6"/>
-            <path d="M94 86C94 78 104 74 113 75C122 76 125 82 123 88C121 95 112 97 105 96C98 95 94 92 94 86Z" stroke-width="1.8"/>
-            <path d="M106 82l6 6M112 82l-6 6" stroke-width="1.4"/>
-            <rect class="pt" x="14.5" y="96.5" width="7" height="7" stroke-width="1.6"/>
-            <rect class="pt" x="112.5" y="18.5" width="7" height="7" stroke-width="1.6"/>
-            <rect class="pt" x="180.5" y="96.5" width="7" height="7" stroke-width="1.6"/>
-            <rect class="pt" x="70.5" y="138.5" width="7" height="7" stroke-width="1.6"/>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">TOPOFORGE</h3></div>
-          <p class="rdesc">topography in the browser &mdash; spline extents, a TIN surface to sculpt, CSV, OBJ &amp; DXF out</p>
-          <div class="ropts"><a class="ropt" href="https://basilicalabs.ai/topoforge.html" target="_blank" rel="noopener">Open the forge</a></div>
-        </article>
+    </div>
+  </section>
 
-        <!-- DATA CENTRE FORGE -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <g transform="translate(-4 -6)">
-              <path d="M35.5 95.3L126.5 69.3L194.5 106.7L103.5 132.7Z" stroke-width="1.1" stroke-dasharray="3 5"/>
-              <path class="pt" d="M60 60L100 82V122L60 100Z"/>
-              <path class="pt" d="M100 82L170 62V102L100 122Z"/>
-              <path class="pt" d="M60 60L130 40L170 62L100 82Z"/>
-              <ellipse cx="94" cy="67" rx="7" ry="3.5" stroke-width="1.4"/>
-              <ellipse cx="108" cy="63" rx="7" ry="3.5" stroke-width="1.4"/>
-              <ellipse cx="122" cy="59" rx="7" ry="3.5" stroke-width="1.4"/>
-              <ellipse cx="136" cy="55" rx="7" ry="3.5" stroke-width="1.4"/>
-              <path d="M112 87.6V109.6M124 84.1V106.1M136 80.7V102.7M148 77.3V99.3M160 73.9V95.9" stroke-width="1.2"/>
-              <path d="M76 108.8V90.8L84 95.2V113.2" stroke-width="1.4"/>
-            </g>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">DATA CENTRE FORGE</h3></div>
-          <p class="rdesc">site, terrain &amp; utilities tooling for data centres &mdash; the first forge is live</p>
-          <div class="ropts"><a class="ropt" href="https://dcforge.basilicalabs.ai/" target="_blank" rel="noopener">Open the forge</a></div>
-        </article>
+  <!-- ════════ WEBSITES ════════
+       One <a class="site"> per website, in the style of Basilica's client cards. -->
+  <section class="sect" id="websites" aria-labelledby="websitesHead">
+    <h2 class="section-head" id="websitesHead">Websites<span class="sh-sub">the studio &amp; the school</span></h2>
+    <div class="sites">
 
-        <!-- PYBUFFET -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M30 126V131C54 125 82 125 100 133C118 125 146 125 170 131V126" stroke-width="1.4"/>
-            <path d="M100 42C82 34 54 34 30 40V126C54 120 82 120 100 128Z"/>
-            <path d="M100 42C118 34 146 34 170 40V126C146 120 118 120 100 128Z"/>
-            <path d="M42 58H88M42 68H80M42 78H88M42 88H72M42 98H88M42 108H82" stroke-width="1.1"/>
-            <path d="M112 110H160" stroke-width="1"/>
-            <path d="M112 106L124 103L136 104L148 99L160 100" stroke-width="1.2" opacity=".4"/>
-            <path d="M112 100L122 92L130 96L140 78L150 82L160 60"/>
-            <circle cx="140" cy="78" r="2.6" fill="currentColor" stroke="none"/>
-            <circle cx="160" cy="60" r="2.6" fill="currentColor" stroke="none"/>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">PYBUFFET</h3></div>
-          <p class="rdesc">the EDGAR ledger &mdash; SEC financials, Buffett notes &amp; a watchlist built with an AI</p>
-          <div class="ropts"><a class="ropt" href="https://basilicalabs.ai/pybuffet.html" target="_blank" rel="noopener">Open the ledger</a></div>
-        </article>
+      <!-- BASILICALABS.AI -->
+      <a class="site" href="https://basilicalabs.ai/" target="_blank" rel="noopener">
+        <svg class="mark" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path transform="translate(52 0) scale(0.30)" d="M50 0C54 32 68 46 100 50 68 54 54 68 50 100 46 68 32 54 0 50 32 46 46 32 50 0Z"/><path transform="translate(0 22) scale(0.60)" d="M50 0C54 32 68 46 100 50 68 54 54 68 50 100 46 68 32 54 0 50 32 46 46 32 50 0Z"/><path transform="translate(60 56) scale(0.40)" d="M50 0C54 32 68 46 100 50 68 54 54 68 50 100 46 68 32 54 0 50 32 46 46 32 50 0Z"/></svg>
+        <span class="c-ital">Basilica</span>
+        <span class="c-name">LABS.AI</span>
+        <span class="c-cat">Practical AI for BIM &amp; Construction</span>
+        <span class="c-svc">Parametric building dashboards, prompt-by-prompt AI tutorials and Revit integration through pyRevit</span>
+        <span class="cbtn">Visit basilicalabs.ai</span>
+      </a>
 
-        <!-- CV BUILDER -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <g transform="translate(40 10) scale(2)" stroke-width="1">
-              <path d="M10 4H38L52 18V66H10Z"/>
-              <path d="M38 4V18H52"/>
-              <circle cx="19" cy="15" r="4.5" stroke-width=".8"/>
-              <path d="M27 13H33M27 18H31" stroke-width=".8"/>
-              <path d="M18 30H44M18 38H44M18 46H32" stroke-width=".8"/>
-              <path class="pt" d="M30 64L32 56L46 42L52 48L38 62Z" stroke-width=".8"/>
-            </g>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">CV BUILDER</h3></div>
-          <p class="rdesc">build a CV in my style &mdash; edit it live on the page, then save it as a PDF</p>
-          <div class="ropts"><a class="ropt" href="https://basilicalabs.ai/cvbuilder.html" target="_blank" rel="noopener">Build a CV</a></div>
-        </article>
+      <!-- POCKETUNIVERSITY.AI -->
+      <a class="site" href="https://pocketuniversity.ai/" target="_blank" rel="noopener">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><path fill="currentColor" d="M32 14L60 28L32 42L4 28Z"/><path fill="currentColor" d="M16 33V46Q32 56 48 46V33L32 42Z"/><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" d="M60 28V44"/><circle cx="60" cy="47" r="3" fill="currentColor"/><path fill="currentColor" transform="translate(3 2) scale(0.16)" d="M50 0C54 32 68 46 100 50 68 54 54 68 50 100 46 68 32 54 0 50 32 46 46 32 50 0Z"/></svg>
+        <span class="c-ital">Pocket</span>
+        <span class="c-name">UNIVERSITY.AI</span>
+        <span class="c-cat">Tutorials &amp; guides in practical AI</span>
+        <span class="c-svc">AI and automation for architecture, engineering and construction, finance and investing, AI image and video, and general AI</span>
+        <span class="cbtn">Visit pocketuniversity.ai</span>
+      </a>
 
-        <!-- PYGHERKIN -->
-        <article class="rcard">
-          <div class="plate"><svg viewBox="0 0 200 160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <defs><clipPath id="clipPyGherkin"><path d="M140 128C134 116 132 104 133 96C135 78 141 64 148 54C155 64 161 78 163 96C164 104 162 116 156 128Z"/></clipPath></defs>
-            <rect x="22" y="46" width="62" height="72" stroke-width="1.8"/>
-            <path d="M22 58H84" stroke-width="1.6"/>
-            <path d="M22 70H84M22 82H84M22 94H84M22 106H84M43 46V118M63 46V118" stroke-width="1"/>
-            <path d="M94 82H120M114 76L120 82L114 88" stroke-width="1.8"/>
-            <path clip-path="url(#clipPyGherkin)" stroke-width="1" d="M70 150L157.5 10M78 150L165.5 10M86 150L173.5 10M94 150L181.5 10M102 150L189.5 10M110 150L197.5 10M118 150L205.5 10M126 150L213.5 10M134 150L221.5 10M142 150L229.5 10M150 150L237.5 10M158 150L245.5 10M140 150L52.5 10M148 150L60.5 10M156 150L68.5 10M164 150L76.5 10M172 150L84.5 10M180 150L92.5 10M188 150L100.5 10M196 150L108.5 10M204 150L116.5 10M212 150L124.5 10M220 150L132.5 10M228 150L140.5 10"/>
-            <path d="M140 128C134 116 132 104 133 96C135 78 141 64 148 54C155 64 161 78 163 96C164 104 162 116 156 128Z"/>
-            <path d="M126 128H172" stroke-width="1.6"/>
-          </svg></div>
-          <div class="sel-banner"><h3 class="sel-name">PYGHERKIN</h3></div>
-          <p class="rdesc">a free pyRevit extension &mdash; rebuilds the levels, diagrid framing &amp; nodes in Revit from the CSV export</p>
-          <div class="ropts"><a class="ropt" href="https://basilicalabs.ai/assets/pyGherkin.extension.zip">Download for pyRevit</a></div>
-        </article>
-
-      </div>
-      <button class="rarrow next" type="button" aria-label="Scroll apps right">&#8250;</button>
     </div>
   </section>
 
@@ -321,18 +264,16 @@
       <div class="box desk">
         <span class="caps">Now on the desk</span>
         <div class="desk-books">
-          <div class="db"><span class="t">Warren Buffett and the Interpretation of Financial Statements</span><span class="a">Mary Buffett &amp; David Clark</span><span class="chip">Finance</span></div>
+          <div class="db"><span class="t">Che</span><span class="a">part one</span></div>
           <span class="orn" aria-hidden="true"><i>●</i><i>◆</i><i>●</i></span>
-          <div class="db"><span class="t">Money</span><span class="a">Jacob Goldstein</span><span class="chip">Economics</span></div>
-          <span class="orn" aria-hidden="true"><i>●</i><i>◆</i><i>●</i></span>
-          <div class="db"><span class="t">The Odyssey</span><span class="a">Homer &middot; translated by Emily Wilson</span><span class="chip">Greek literature</span></div>
+          <div class="db"><span class="t">Good Strategy Bad Strategy</span><span class="a">Richard Rumelt</span><span class="chip">Strategy</span></div>
         </div>
       </div>
 
       <a class="box room" href="https://basilicalabs.ai/reading.html" target="_blank" rel="noopener">
         <div class="oval">
           <span class="caps">The Reading<br>Room</span>
-          <span class="ital" style="font-size:1rem"><span data-count="read">47</span> volumes</span>
+          <span class="ital" style="font-size:1rem"><span data-count="read">50</span> volumes</span>
           <span class="caps caps-tight muted note">2006 &mdash; present</span>
         </div>
         <span class="caps caps-tight muted note">with covers, on BasilicaLabs.AI</span>
@@ -354,6 +295,9 @@
 
     <div class="box shelf" id="shelfBox">
       <ol class="ledger" id="shelf">
+        <li><span class="lt">Warren Buffett and the Interpretation of Financial Statements</span><span class="ly">2026</span><span class="la">Mary Buffett &amp; David Clark<span class="lc">Finance</span></span></li>
+        <li><span class="lt">Money</span><span class="ly">2026</span><span class="la">Jacob Goldstein<span class="lc">Economics</span></span></li>
+        <li><span class="lt">The Odyssey</span><span class="ly">2026</span><span class="la">Homer &middot; translated by Emily Wilson<span class="lc">Greek literature</span></span></li>
         <li><span class="lt">Narconomics</span><span class="ly">2026</span><span class="la">Tom Wainwright<span class="lc">Economics</span></span></li>
         <li><span class="lt">The Rise of Superman</span><span class="ly">2026</span><span class="la">Steven Kotler<span class="lc">Psychology &middot; Neuroscience</span></span></li>
         <li><span class="lt">Atomic Habits</span><span class="ly">2026</span><span class="la">James Clear<span class="lc">Psychology</span></span></li>
@@ -403,7 +347,7 @@
         <li><span class="lt">Think and Grow Rich</span><span class="ly">2006</span><span class="la">Napoleon Hill<span class="lc">Psychology</span></span></li>
       </ol>
       <div class="shelf-foot">
-        <p class="shelf-status" id="shelfStatus" aria-live="polite">47 volumes &middot; most recent first</p>
+        <p class="shelf-status" id="shelfStatus" aria-live="polite">50 volumes &middot; most recent first</p>
         <button class="btn shelf-more" id="shelfMore" type="button" aria-expanded="false" aria-controls="shelf"><span class="lbl">Show the full shelf</span></button>
       </div>
     </div>
@@ -421,6 +365,7 @@
     <nav class="foot-col" aria-label="Footer — site">
       <h3>Site</h3>
       <a href="#apps">Apps</a>
+      <a href="#websites">Websites</a>
       <a href="#writing">Writing</a>
       <a href="#reading">Reading list</a>
     </nav>

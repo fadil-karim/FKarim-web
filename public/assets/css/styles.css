@@ -329,6 +329,31 @@ a.box:hover{ text-decoration:none; box-shadow:0 0 0 1px var(--ink) inset; }
   font-family:var(--font-brand); font-size:.64rem; letter-spacing:.14em;
   text-transform:uppercase; color:var(--ink-60); }
 
+/* ── apps: one card per app, across the width ── */
+.apps-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:var(--gap); }
+.apps-grid .plate{ aspect-ratio:16/10; }
+.apps-grid .plate svg{ width:64%; }
+.apps-grid .sel-banner .sel-name{ font-size:1.1rem; }
+
+/* ── websites: Basilica's client card ── */
+.sites{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:var(--gap); }
+.site{ border:1px solid var(--hair); display:flex; flex-direction:column; align-items:center;
+  justify-content:center; gap:.28rem; padding:1.8rem 1.2rem 1.6rem; text-align:center; }
+a.site:hover{ text-decoration:none; box-shadow:0 0 0 1px var(--ink) inset; }
+a.site:hover .cbtn{ background:var(--ink); color:var(--paper); }
+.site .mark{ width:54px; height:54px; margin-bottom:.5rem; }
+.c-ital{ font-style:italic; font-size:1.05rem; }
+.c-name{ font-family:var(--font-display); font-size:1.35rem; letter-spacing:.05em; line-height:1.2; }
+.c-cat{ font-family:var(--font-brand); font-weight:600; font-size:.56rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ink-60); line-height:1.55; margin-top:.55rem;
+  padding-top:.55rem; position:relative; }
+.c-cat::before{ content:""; position:absolute; top:0; left:50%; transform:translateX(-50%);
+  width:22px; height:1px; background:var(--hair); }
+.c-svc{ font-style:italic; font-size:.9rem; line-height:1.45; margin-top:.35rem; max-width:26rem; text-wrap:balance; }
+.cbtn{ display:inline-block; margin-top:1rem; border:1px solid var(--ink); padding:.55rem 1.3rem;
+  font-family:var(--font-brand); font-weight:600; font-size:.56rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--ink); }
+
 /* ── 404 ── */
 .lost{ min-height:52vh; margin-top:var(--gap); padding:3rem clamp(20px,4vw,48px); gap:.75rem; }
 .lost::before{ content:""; position:absolute; inset:7px; border:1px dashed var(--ink); pointer-events:none; }

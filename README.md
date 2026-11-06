@@ -1,6 +1,6 @@
 # FKarim-web
 
-The personal homepage of Fadil Karim: **Apps**, **Writing** and a **Reading list**,
+The personal homepage of Fadil Karim: **Apps**, **Websites**, **Writing** and a **Reading list**,
 set in the BasilicaLabs.AI house style. Black on white, hairline boxes, Prata display
 words, Newsreader italics, letter-spaced Afacad Flux caps, and a light/dark toggle.
 
@@ -42,8 +42,10 @@ Everything under `/assets/` is cached for a year. After changing `styles.css` or
 ## Adding things
 
 - **An app**: copy an `<article class="rcard">` inside `#apps`. Each one has a line
-  drawing (`.plate`), the name on the black banner, one line of description and its
-  buttons. For a button that isn't ready yet, use `<span class="ropt off">Coming soon</span>`.
+  drawing (`.plate`), the name on the black banner, one line of description and a
+  button per platform. For a platform that isn't live yet, use
+  `<span class="ropt off">iOS &middot; soon</span>`.
+- **A website**: copy an `<a class="site">` inside `#websites`.
 - **Writing**: the lead essay is the large `w-lead` box and the other pieces fill
   `w-1` to `w-4`. `w-4` is the "intentionally left blank" slot for the next piece.
 - **A book**: add one `<li>` at the top of `#shelf` (most recent first). The counts and
@@ -53,8 +55,9 @@ Everything under `/assets/` is cached for a year. After changing `styles.css` or
 ## External resources
 
 - Fonts load from Google Fonts: Afacad Flux, Newsreader and Prata.
-- The app, writing and Reading Room links point to basilicalabs.ai, which also serves
-  the pyGherkin download.
+- The apps link to visualneuroscience.ai and its App Store listing; the Websites
+  section links to basilicalabs.ai and pocketuniversity.ai; the writing and the Reading
+  Room link to basilicalabs.ai.
 
 ## Fonts
 
