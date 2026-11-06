@@ -60,7 +60,7 @@
   var ticking = false;
   function spy(){
     ticking = false;
-    var line = window.innerHeight * 0.4, current = null;
+    var line = Math.min(160, window.innerHeight * 0.4), current = null;
     for(var s = 0; s < sections.length; s++){
       if(sections[s].el.getBoundingClientRect().top <= line) current = sections[s];
     }

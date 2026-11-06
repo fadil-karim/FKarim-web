@@ -1,7 +1,7 @@
 # FKarim-web
 
-The personal homepage of Fadil Karim: **Apps**, **Websites**, **Writing** and a **Reading list**,
-set in the BasilicaLabs.AI house style. Black on white, hairline boxes, Prata display
+The personal homepage of Fadil Karim: **Apps**, **Websites**, **Channels**, **Writing**,
+a **Reading list** and a **Graphic design portfolio**, set in the BasilicaLabs.AI house style. Black on white, hairline boxes, Prata display
 words, Newsreader italics, letter-spaced Afacad Flux caps, and a light/dark toggle.
 
 A Cloudflare Workers static-assets site: plain HTML, CSS and a little vanilla
@@ -44,20 +44,25 @@ Everything under `/assets/` is cached for a year. After changing `styles.css` or
 - **An app**: copy an `<article class="rcard">` inside `#apps`. Each one has a line
   drawing (`.plate`), the name on the black banner, one line of description and a
   button per platform. For a platform that isn't live yet, use
-  `<span class="ropt off">iOS &middot; soon</span>`.
+  `<span class="ropt off">App Store &middot; soon</span>`.
 - **A website**: copy an `<a class="site">` inside `#websites`.
+- **A channel**: copy an `<a class="box">` inside `#channels`.
 - **Writing**: the lead essay is the large `w-lead` box and the other pieces fill
   `w-1` to `w-4`. `w-4` is the "intentionally left blank" slot for the next piece.
 - **A book**: add one `<li>` at the top of `#shelf` (most recent first). The counts and
   filter tabs update themselves, and the subject in `.lc` drives the filters. The same
   list lives on basilicalabs.ai/reading.html, so add new books there too.
+- **A portfolio piece**: put an `<img>` inside one of the `.frame`s in `#portfolio` and
+  remove its `.no` label. For more frames, add a `.frame` with `f-portrait`,
+  `f-landscape` or `f-square`.
 
 ## External resources
 
 - Fonts load from Google Fonts: Afacad Flux, Newsreader and Prata.
-- The apps link to visualneuroscience.ai and its App Store listing; the Websites
-  section links to basilicalabs.ai and pocketuniversity.ai; the writing and the Reading
-  Room link to basilicalabs.ai.
+- The apps link to visualneuroscience.ai, vocabcards.app, businessnumbers.app and
+  the App Store; the Websites section links to basilicalabs.ai, pocketuniversity.ai and
+  fkarimdesign.com; Channels links to GitHub, YouTube and LinkedIn; the writing and the
+  Reading Room link to basilicalabs.ai.
 
 ## Fonts
 

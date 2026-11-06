@@ -4,8 +4,8 @@ Standing policy for this repository. Read it before making any change here.
 
 ## What this repo is
 
-Fadil Karim's personal homepage (Apps, Websites, Writing, Reading list), set in the
-BasilicaLabs.AI design system. A Cloudflare Workers static-assets site: everything
+Fadil Karim's personal homepage (Apps, Websites, Channels, Writing, Reading list and
+a Graphic design portfolio), set in the BasilicaLabs.AI design system. A Cloudflare Workers static-assets site: everything
 served lives in `public/` and there is no build step - the files in that directory
 are the site. The repo is connected to Cloudflare Workers Builds (Worker
 `fkarim-web`), so **every push to `main` deploys to production**.
@@ -78,9 +78,14 @@ requested deliberately.
 - The reading list mirrors basilicalabs.ai/reading.html; new books go in both.
 - App, website and writing descriptions come from the owner or from the pages
   they link to (visualneuroscience.ai and its App Store listing, basilicalabs.ai,
-  pocketuniversity.ai) - check the source before changing a claim.
-- Vocab Cards and Business Numbers show their Web and iOS buttons as "soon" until
-  the owner supplies the links; Visual Neuroscience's Vision Pro button likewise.
+  pocketuniversity.ai, fkarimdesign.com) - check the source before changing a claim.
+- Only Visual Neuroscience Anatomy is on the App Store. Vocab Cards (vocabcards.app)
+  and Business Numbers (businessnumbers.app) are live on the web, with "App Store ·
+  soon" until they are listed; Visual Neuroscience's Vision Pro button is "soon" too.
+- The owner's GitHub is github.com/fadil-karim. The Basilica sites link to
+  github.com/ottomanlabsai, which GitHub's user search does not find - don't copy it.
+- The Graphic design portfolio shows four empty frames until the owner sends the
+  pieces; to hang one, put an `<img>` in a `.frame` and drop its `.no` label.
 
 ## Release ledger
 
@@ -88,3 +93,4 @@ requested deliberately.
 | --- | --- | --- |
 | v1.0 | The homepage opens: apps, writing and the shelf | The personal homepage goes live in the BasilicaLabs.AI house style, gathering the apps, the essays and tutorials, and a reading list of forty-seven volumes beside the books currently on the desk. It now publishes itself to Cloudflare whenever the site changes, with a matching page for addresses that do not exist. |
 | v1.1 | Three apps, two websites and a new desk | The Apps section now carries Visual Neuroscience Anatomy, Vocab Cards and Business Numbers, with Visual Neuroscience live on the web and iOS and the other two marked as coming soon, and a new Websites section beneath it points to BasilicaLabs.AI and PocketUniversity.AI. The Odyssey, Money and the Warren Buffett book join the shelf as finished, and Che and Good Strategy Bad Strategy now sit on the desk. |
+| v1.2 | Websites, channels and a wall of empty frames | FKarim Design joins the websites, a new Channels section gathers GitHub, both YouTube channels and LinkedIn, and a graphic design portfolio now closes the page with its frames hung and waiting for the work. Vocab Cards and Business Numbers open on the web with the App Store to follow, the GitHub links point to the right account, and the menu sits neatly on a phone. |
