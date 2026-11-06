@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- the BasilicaLabs.AI sparkle, inverted for the personal pages -->
+  <rect width="64" height="64" fill="#111111"/>
+  <path fill="#FFFFFF" d="M32 5 Q32 32 59 32 Q32 32 32 59 Q32 32 5 32 Q32 32 32 5 Z"/>
+</svg>
