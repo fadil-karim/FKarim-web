@@ -19,6 +19,7 @@ public/
   _headers                 security and caching headers
   assets/css/styles.css    the design system
   assets/js/site.js        light/dark toggle, rail arrows, nav underline, shelf filter
+  downloads/               files linked from video descriptions (keep the names)
 wrangler.jsonc             assets-only Worker config, no script
 package.json               wrangler plus dev / deploy / check scripts
 ```

@@ -16,6 +16,7 @@ public/            everything served
   404.html
   favicon.svg, apple-touch-icon.png
   assets/css|js
+  downloads/       files linked from elsewhere (video descriptions)
   _headers         security + caching headers
   robots.txt
 wrangler.jsonc     assets-only config, no Worker script
@@ -75,6 +76,9 @@ requested deliberately.
   `styles.css` or `site.js`, bump the `?v=` number on their links in both
   `index.html` and `404.html`, or returning visitors keep the old file.
 - `404.html` is served for any unknown path, so its links must stay root-absolute.
+- `public/downloads/` holds files that YouTube descriptions and other sites link to.
+  Never rename or move one: the outside links depend on the exact path. The
+  Grasshopper script there came from the old RevitTurboCharger site.
 - The reading list mirrors basilicalabs.ai/reading.html; new books go in both.
 - App, website and writing descriptions come from the owner or from the pages
   they link to (visualneuroscience.ai and its App Store listing, basilicalabs.ai,
@@ -94,3 +98,4 @@ requested deliberately.
 | v1.0 | The homepage opens: apps, writing and the shelf | The personal homepage goes live in the BasilicaLabs.AI house style, gathering the apps, the essays and tutorials, and a reading list of forty-seven volumes beside the books currently on the desk. It now publishes itself to Cloudflare whenever the site changes, with a matching page for addresses that do not exist. |
 | v1.1 | Three apps, two websites and a new desk | The Apps section now carries Visual Neuroscience Anatomy, Vocab Cards and Business Numbers, with Visual Neuroscience live on the web and iOS and the other two marked as coming soon, and a new Websites section beneath it points to BasilicaLabs.AI and PocketUniversity.AI. The Odyssey, Money and the Warren Buffett book join the shelf as finished, and Che and Good Strategy Bad Strategy now sit on the desk. |
 | v1.2 | Websites, channels and a wall of empty frames | FKarim Design joins the websites, a new Channels section gathers GitHub, both YouTube channels and LinkedIn, and a graphic design portfolio now closes the page with its frames hung and waiting for the work. Vocab Cards and Business Numbers open on the web with the App Store to follow, the GitHub links point to the right account, and the menu sits neatly on a phone. |
+| v1.3 | The family types script is downloadable again | The Grasshopper script from the Revit family types video, lost when the old RevitTurboCharger site went offline, can be downloaded from this site again, so the video has a working link once more. |
